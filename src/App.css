@@ -1,0 +1,81 @@
+body{
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+.App {
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 90%;
+}
+.App h1{
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.imageContainer{
+  position: relative;
+}
+.image{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 100%;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+.editable{
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70%;
+}
+.editable img{
+  border: none;
+  cursor: pointer;
+  width: 25px;
+}
+input[type = "text"]{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  width: 35%;
+  min-width: 200px;
+  color: white;
+  display: block;
+  outline: none;
+  margin: 10px auto;
+}
+input[type = "file"]{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 0;
+}
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #3e8e41;
+}
